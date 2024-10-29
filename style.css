@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    
+    height: 100vh;
+    background-color: #15202b;
+    margin: 0;
+    flex-direction: column;
+}
+
+.clock {
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.clock-item {
+    position: relative;
+    border: 2px solid;
+    border-radius: 120px 120px;
+    width: 120px;
+    height: 120px;
+    margin: 0 10px;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-ring__circle {
+    fill: transparent;
+    stroke-width: 8;
+    stroke-dasharray: 339.292;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s linear;
+    transition: stroke-dasharray 0.5s linear;
+}
+
+.day-month-circle {
+    stroke: #673ab7;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.day-year-circle {
+    stroke: #ff9800;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.month-year-circle {
+    stroke: #009688;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.days-circle {
+    stroke: #673ab7;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.week-month-circle {
+    stroke: #ff9800;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.week-year-circle {
+    stroke: #009688;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.hours-circle {
+    stroke: #4caf50;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.minutes-circle {
+    stroke: #2196f3;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.seconds-circle {
+    stroke: #f44336;
+    r: 54;
+    cx: 60;
+    cy: 60;
+}
+
+.clock__text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    color:white;
+}
